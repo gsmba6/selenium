@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		features="src/feature",
 		glue="stepDefinition",
 		monochrome=true,
-		format = "json:target/test.json"
+		plugin= {"json:target/cucumber-report.json"}
 		)
 public class Runner {
 
